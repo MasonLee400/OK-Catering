@@ -1,0 +1,15 @@
+{
+  "name": "ok-catering-website",
+  "version": "1.0.0",
+  "description": "website for Owen Kunsleman",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mason Lee",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.12.7"
+  }
+}
