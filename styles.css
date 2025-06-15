@@ -4,42 +4,28 @@
     padding: 0;
 }
 
-.showcase{
-    right: 0;
+.showcase {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
-    background-color: #111;
-    color: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: black;
+    color: white;
+    overflow: hidden;
 }
 
 .showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: .8;
-}
-
-.showcase h2{
-    z-index: 100;
-    font-size: 15vh;
-    margin-bottom: 5vh;
-}
-
-.showcase p{
-    z-index: 100;
-    font-size: 5vh;
+    width: 85%;
+    height: auto;
+    object-fit: contain;
 }
 
 .about_me {
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     background-color: #111;
     color: white;
@@ -90,7 +76,7 @@
 
 .pictures{
     width: 100%;
-    min-height: 105vh;
+    min-height: 110vh;
     display: flex;
     background-color: #3B3923;
     color: white;

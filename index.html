@@ -13,9 +13,15 @@
   </head>
   <body>
     <section class="showcase">
-      <video src="tempVideo.mp4" muted loop autoplay></video>
-      <h2 id="OK">OK Catering</h2>
-      <p>Owen Kunselman</p>
+      <video id="myVideo" src="okcatering.mp4" loop autoplay muted></video>
+
+      <script>
+        document.addEventListener("click", () => {
+          const video = document.getElementById("myVideo");
+          video.muted = false;
+          video.play();
+        });
+      </script>
 
       <script src="js/gsap.min.js"></script>
       <script src="js/DrawSVGPlugin.min.js"></script>
