@@ -13,6 +13,7 @@
   </head>
   <body>
     <section class="showcase">
+      <div class="showcase_title">O.K. Catering</div>
       <video controls autoplay muted loop>
         <source
           id="myVideo"
@@ -26,19 +27,10 @@
       <script src="js/ScrollTrigger.min.js"></script>
 
       <script>
-        gsap.from("#OK", {
+        gsap.from(".showcase_title", {
           opacity: 0,
-          y: -30,
-          duration: 1.5,
-          ease: "power2.out",
-          delay: 0.5,
-        });
-
-        gsap.from(".showcase p", {
-          opacity: 0,
-          duration: 1.2,
-          ease: "power2.out",
-          delay: 1.5, // start after OK Catering finishes
+          duration: 2,
+          y: -50,
         });
       </script>
     </section>
