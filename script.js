@@ -35,4 +35,30 @@ const initSlider = () =>{
     })
 }
 
+const imageList      = document.querySelector(".image-list");
+const scrollbarTrack = document.querySelector(".scrollbar-track");
+const scrollbarThumb = document.querySelector(".scrollbar-thumb");
+
+function updateThumbPosition() {
+  const maxScrollLeft   = imageList.scrollWidth - imageList.clientWidth;
+  const scrollLeft      = imageList.scrollLeft;
+
+  const scrollProgress  = maxScrollLeft === 0 ? 0 : scrollLeft / maxScrollLeft;
+
+  const trackWidth      = scrollbarTrack.clientWidth;
+  const thumbWidth      = scrollbarThumb.offsetWidth;
+  const maxThumbX       = trackWidth - thumbWidth;
+
+  // Clamp between 0 and maxThumbX
+  const thumbX = Math.max(0, Math.min(maxThumbX, scrollProgress * maxThumbX));
+
+  scrollbarThumb.style.left = `${thumbX}px`;
+}
+
+imageList.addEventListener("scroll", updateThumbPosition);
+window.addEventListener("resize", updateThumbPosition);
+
+// Call once at start
+updateThumbPosition();
+
 window.addEventListener("load", initSlider);
