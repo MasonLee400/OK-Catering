@@ -15,7 +15,7 @@ html, body {
 .showcase {
     position: relative;
     width: 100%;
-    min-height: 110vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ html, body {
     height: 20vh;
     display: flex;
     align-items: center;
-    font-size: clamp(.3rem, 4.3vw, 3rem);
+    font-size: 2.5vw;
     width: 100%;
     padding-left: 17vw;
 }
@@ -250,7 +250,7 @@ html, body {
 #contact-container{
     height: 30%;
     width: 100%;
-    font-size: 4.5vw;
+    font-size: 4.0vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,9 +260,8 @@ html, body {
 }
 
 #contact-info{
-    height: 60%;
     width: 100%;
-    font-size: 1.4vw;
+    font-size: 1.7vw;
     display: flex;
     line-height: 5;
     text-align: center;
@@ -275,7 +274,7 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-top: 4vh;
-    font-size: clamp(.7rem, 1.5vw, 3rem);
+    font-size: 1.3vw;
 }
 
 /*mobile version*/
