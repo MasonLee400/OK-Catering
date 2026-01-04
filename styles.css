@@ -15,7 +15,7 @@ html, body {
 .showcase {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@ html, body {
 
 .about_me {
   width: 100%;
-  min-height: 100vh;       /* or remove this if not needed */
+  min-height: 110vh;       /* or remove this if not needed */
   display: flex;
   background-color: #111;
   color: white;
@@ -86,7 +86,7 @@ html, body {
 
 .pictures{
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     background-color: #3B3923;
     color: white;
@@ -213,7 +213,7 @@ html, body {
 
 .contact
 {
-    min-height: 100vh;
+    min-height: 110vh;
     background-color: #111;
     display: flex;
     flex-direction: row;
@@ -341,7 +341,7 @@ html, body {
 
     #about {
         width: 100%;
-        font-size: clamp(.6rem, 3vw, 2rem);
+        font-size: clamp(.6rem, 3.3vw, 2rem);
         display: flex;
         justify-content: center;
         line-height: 1.7;
@@ -360,7 +360,7 @@ html, body {
     }
 
     .owen_image img{
-        width: 50%
+        width: 45%
     }
 
     .pictures{
