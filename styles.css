@@ -4,7 +4,7 @@ html, body {
   box-sizing: border-box;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: 111;
+  background-color: #111;
 }
 
 .showcase_title{
@@ -32,73 +32,75 @@ html, body {
 }
 
 .about_me {
-    width: 100%;
-    min-height: 110vh;
-    display: flex;
-    background-color: #111;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  width: 100%;
+  min-height: 100vh;       /* or remove this if not needed */
+  display: flex;
+  background-color: #111;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 6vh 0;          /* give it breathing room */
 }
 
 .description {
   width: 50%;
-  height: 80vh;
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 10vw;
+  padding-bottom: 10vh;
 }
 
-#title{
-    height: 20%;
-    width: 100%;
-    font-size: clamp(2rem, 6vw, 5rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#title {
+  width: 100%;
+  font-size: clamp(1rem, 4.3vw, 7rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#about{
-    height: 70%;
-    width: 100%;
-    font-size: 1.2vw;
-    display: flex;
-    justify-content: center;
-    line-height: 1.7;
-    text-align: center;
+#about {
+  width: 100%;
+  font-size: clamp(.6rem, 1.2vw, 2rem);
+  display: flex;
+  justify-content: center;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 3vh;
 }
+
 
 .owen_image{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center; 
+    object-fit: contain;
 }
 
 .owen_image img{
-    height: 80vh;
+    width: 55%
 }
 
 .pictures{
     width: 100%;
-    min-height: 110vh;
+    min-height: 100vh;
     display: flex;
     background-color: #3B3923;
     color: white;
     flex-direction: column;
+    padding: 2vh 0;
 }
 
 #pictures-title{
     height: 20vh;
     display: flex;
     align-items: center;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(.3rem, 4.3vw, 3rem);
     width: 100%;
     padding-left: 17vw;
-    margin-top: 2vh;
 }
 
 .slider-body{
@@ -273,11 +275,11 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-top: 4vh;
-    font-size: 1.5vw;
+    font-size: clamp(.7rem, 1.5vw, 3rem);
 }
 
 /*mobile version*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
     .showcase {
         position: relative;
         width: 100%;
@@ -309,60 +311,61 @@ html, body {
 
     .about_me {
         width: 100%;
-        min-height: 110vh;
+        min-height: 100vh;       /* or remove this if not needed */
         display: flex;
         background-color: #111;
         color: white;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        justify-content: flex-start;
+        padding: 6vh 0;          /* give it breathing room */
     }
 
     .description {
-        width: 100%;
-        height: 40vh;
+        width: 80%;
         display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        padding-top: 10vh;
+        flex-direction: column;
+        align-items: flex-start;
         padding-left: 0;
+        padding-bottom: 0;
     }
 
-    #title{
-        height: 20%;
+    #title {
         width: 100%;
-        font-size: clamp(2rem, 6vw, 5rem);
+        font-size: clamp(1rem, 7vw, 7rem);
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    #about{
-        height: 70%;
-        width: 80%;
-        font-size: 2.6vw;
+    #about {
+        width: 100%;
+        font-size: clamp(.6rem, 3vw, 2rem);
         display: flex;
         justify-content: center;
         line-height: 1.7;
         text-align: center;
+        margin-top: 3vh;
     }
+
 
     .owen_image{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center; 
-        padding-top: 5vh;
+        object-fit: contain;
+        margin-top: 3vh;
     }
 
     .owen_image img{
-        height: 40vh;
+        width: 50%
     }
 
     .pictures{
         width: 100%;
-        min-height: 110vh;
+        min-height: 100vh;
         display: flex;
         background-color: #3B3923;
         color: white;
@@ -497,7 +500,7 @@ html, body {
         font-size: 3vw;
     }
     .contact{
-        min-height: 110vh;
+        min-height: 100vh;
         background-color: #111;
         display: flex;
         flex-direction: column;
@@ -527,6 +530,8 @@ html, body {
     .contact-description{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
 
     }
@@ -534,13 +539,10 @@ html, body {
         height: 30%;
         width: 100%;
         font-size: 7vw;
-        display: flex;
-        justify-content: flex-start;
         align-items: center;
         text-align: center;
         color:white;
         margin-top: 15vh;
-        margin-left: 15vw;
     }
 
     #contact-info{

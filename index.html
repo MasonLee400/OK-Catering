@@ -203,6 +203,15 @@
           stagger: 0.25,
           delay: 0.25,
         });
+        gsap.from(".contact-container p", {
+          scrollTrigger: {
+            trigger: ".contact-image",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          duration: 1,
+        });
       </script>
     </section>
   </body>
