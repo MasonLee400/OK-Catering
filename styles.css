@@ -33,14 +33,14 @@ html, body {
 
 .about_me {
   width: 100%;
-  min-height: 110vh;       /* or remove this if not needed */
+  min-height: 110vh;       
   display: flex;
   background-color: #111;
   color: white;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 6vh 0;          /* give it breathing room */
+  padding: 6vh 0;          
 }
 
 .description {
@@ -63,7 +63,7 @@ html, body {
 
 #about {
   width: 100%;
-  font-size: clamp(.6rem, 1.2vw, 2rem);
+  font-size: clamp(.7rem, 1.3vw, 2.3rem);
   display: flex;
   justify-content: center;
   line-height: 1.7;
